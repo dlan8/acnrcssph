@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNRCSS Philippines</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="top-text">
+        <h1>ACNRCSS Philippines</h1>
+    </div>
+    
+    <header>
+    <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="gaming.html" onclick="closeMenu()">Gaming</a></li>
+                <li><a href="equipments.html" onclick="closeMenu()">Automotive Equipments</a></li>
+                <li><a href="about.html" onclick="closeMenu()">About Us</a></li>
+            </ul>
+        </nav>
+       <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="front_qtr_lh_v001.jpg" alt="Car 1" width="1400" height="650">
+        </div>
+        <div class="slides fade">
+            <img src="mclaren-p1-bahrain.webp" alt="Car 2" width="1800" height="700">
+        </div>
+        <div class="slides fade">
+            <img src="1200x800.jpg" alt="Car 2" width="1400" height="650">
+        </div>
+        
+    <!-- Add more slides as needed -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+   <section class="categories">
+    <div class="container">
+        <div class="category">
+            <a href="supercars.html">
+                <img src="as.webp" alt="Supercar">
+                <h2>SUPERCARS</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="F1.HTML">
+                <img src="2524215.jpg" alt="F1 Car">
+                <h2>F1 CARS</h2>
+            </a>
+        </div>
+        
+        <div class="category">
+            <a href="sportscar.html">
+                <img src="images.jpg" alt="Sports Car">
+                <h2>SPORTS CAR</h2>
+            </a>
+        </div>
+        <div class="category">
+            <a href="clothes.html">
+                <img src="1500x1500_FFF_RP24_01.webp" alt="Car Accessories">
+                <h2>CLOTHES & ACCESSORIES</h2>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>0708 BGC Highstreet</p>
+                <p>Phone: 09231533298</p>
+                <p>Email: acnrcssph@gmail.com</p>
+            </div>
+            <div class="newsletter">
+                <h2>Inquire Now!</h2>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>   
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+body {
+    background-color: #1B1212; /* Light gray background */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Menu Styles */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.4s;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu.active {
+    left: 0;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation: fade 5s; /* Change duration to 5 seconds */
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Categories Styles */
+.categories {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    text-align: center;
+    margin-bottom: 20px;    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #36454F;
+}
+
+.category img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category h2 {
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact, .newsletter {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact p, .newsletter p {
+    margin: 10px 0;
+}
+
+.contact h2, .newsletter h2 {
+    margin-bottom: 20px;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #cc0000;
+}
+
+.newsletter button {
+    background-color: black; /* Set button background color to black */
+    color: white; /* Set button text color to white */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Adjust button padding */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.newsletter button:hover {
+    background-color: #333; /* Change button background color on hover */
+}
+
+/* Top Text Styles */
+.top-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+}
+
+.top-text {
+    text-align: center;
+    border: 2px solid black; /* Black border */
+    padding: 10px;
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    font-size: 24px; /* Larger font size */
+    font-family: 'Arial Black', sans-serif; /* Apply Arial Black font */
+}

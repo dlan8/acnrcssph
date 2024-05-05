@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNRCSS SportsCar</title>
+    <link rel="stylesheet" href="sportscar.css">
+</head>
+<body>
+    <!-- Octagon Back Button -->
+    <a href="index.html" class="octagon">&#9664;</a>
+
+    <!-- Header -->
+    <header>
+        <h1>ACNRCSS Sports Cars</h1>
+    </header>
+
+    <!-- Products and Cart Container -->
+    <div class="container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="r.jpg" alt="Product 1">
+                <h3>Nissan GT-R Nismo</h3>
+                <p>$210,740</p>
+                <p>The Nissan GT-R Nismo is the ultimate track-oriented version of Nissan's legendary GT-R.</p>
+                <button onclick="addToCart('Nissan GT-R Nismo', 210740)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="n.jpg" alt="Product 2">
+                <h3>Nissan 370Z</h3>
+                <p>$58,000</p>
+                <p>The Nissan 370Z is a classic two-seater sports car that offers thrilling performance.</p>
+                <button onclick="addToCart('Nissan 370Z', 30090)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="f.webp" alt="Product 3">
+                <h3>Nissan 400Z</h3>
+                <p>$45,000</p>
+                <p>The Nissan 400Z is the upcoming successor to the iconic Nissan 370Z.</p>
+                <button onclick="addToCart('Nissan 400Z', 45000)">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images (3).jpg" alt="Product 4">
+                <h3>Nissan Silvia S15</h3>
+                <p>$85,000</p>
+                <p>The Nissan Silvia S15 is a popular choice among drift enthusiasts for its lightweight design and rear-wheel drive.</p>
+                <button onclick="addToCart('Nissan Silvia S15', 85000)">Add to Cart</button>
+            </div>
+			
+			<div class="product">
+                <img src="artisan-nissan-gt-r-r35-conversion-r34-01-1703153657.webp" alt="Product 4">
+                <h3>GT-R R35 Skyline</h3>
+                <p>$89000</p>
+                <p>Production of the Skyline GT-R ended in August 2002. The car was replaced by the GT-R (R35), an all-new vehicle based on an enhanced version of the Skyline V36 platform.</p>
+                <button onclick="addToCart('GT-R R35 Skyline', 89000)">Add to Cart</button>
+            </div>
+			
+			 <div class="product">
+                <img src="rx-7-mazda-7-1622654641.jpg" alt="Product 4">
+                <h3>Mazda RX7</h3>
+				<br><br>
+                <p>$90,000</p>
+                <p>Particularly among enthusiasts, the RX-7 remains the icon of rotary powered sports cars and indeed rotary production cars.</p>
+                <button onclick="addToCart('Mazda RX7', 90000)">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Cart -->
+        <div id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="sportscar.js"></script>
+</body>
+</html>
