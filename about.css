@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure full viewport height */
+    background-image: url('Classic-at-Silverstone-Lewis-Hamilton-cars-poster.webp'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for absolute positioning of child elements */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Limit the maximum width */
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

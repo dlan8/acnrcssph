@@ -1,0 +1,120 @@
+  body {
+            background-color: #28282B;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Container for products and cart */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Product container */
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: calc(50% - 20px); /* Adjust product width for responsiveness */
+            box-sizing: border-box;
+            text-align: center; /* Center the content */
+            background-color: #A1AEB1; /* White background */
+        }
+
+        /* Cart container */
+        #cart {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: calc(33.33% - 20px); /* Adjust cart width for responsiveness */
+            box-sizing: border-box;
+            margin-top: 20px;
+            margin-right: 20px;
+            text-align: center; /* Center the content */
+            background-color: #CBC1AE; /* White background */
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        /* Styles for buttons */
+        .product button, #checkout-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 80%; /* Adjust button width for responsiveness */
+            box-sizing: border-box;
+        }
+
+        .product button:hover, #checkout-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styles for the remove button */
+        .remove-btn {
+            background-color: #dc3545; /* Red color for remove button */
+        }
+
+        .remove-btn:hover {
+            background-color: #c82333; /* Darker red color on hover */
+        }
+
+        /* Product image */
+        .product img {
+            max-width: 75%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Cart styles */
+        #cart-items {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #cart-items li {
+            margin-bottom: 10px;
+        }
+
+        /* Checkout button */
+        #checkout-btn {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Center the header */
+        header {
+            text-align: center;
+            color: white;
+        }
+
+        /* Back button styles */
+        #back-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        #back-btn:hover {
+            background-color: #0056b3;
+        }
+		h1{ font-family: Arial Black;
+	}
+    

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNRCSS MERCH</title>
+    <link rel="stylesheet" href="gaming.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ACNRCSS MERCH</h1>
+        </header>
+
+        <!-- Back Button Link -->
+        <a href="index.html" class="back-link">&#9664; Back</a>
+
+        <!-- Product Container -->
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="i1tWozVZAXktr.png" alt="Product 1">
+                <h3>T300RS GT</h3>
+                <p>$81.99</p>
+                <button onclick="addToCart('T300RS GT', 81.99)">Add to Cart</button>
+            </div>
+
+           <div class="product">
+            <img src="images (5).png" alt="Product 3">
+                <h3>Full Set Simulator</h3>
+                <p>$199.99</p>
+                <button onclick="addToCart('Full Set Simulator', 199.99)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images (5).jpg" alt="Product 3">
+                <h3>Racing Wheel</h3>
+                <p>$51.99</p>
+                <button onclick="addToCart('Racing Wheel', 51.99)">Add to Cart</button>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="buy-btn" onclick="buyItems()">Buy</button>
+    </div>
+    <script src="gaming.js"></script>
+</body>
+</html>

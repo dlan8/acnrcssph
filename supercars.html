@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNRCSS SUPERCARS</title>
+    <link rel="stylesheet" href="supercars.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html" id="back-btn">&#9664;</a>
+
+    <!-- Store Header -->
+    <header>
+        <h1 id="store">ACNRCSS SUPERCARS</h1>
+    </header>
+
+    <!-- Products -->
+    <div id="products">
+        <!-- Product 1 -->
+       <div class="product">
+    <img src="F.jpeg" alt="Product 1">
+    <h3>FERRARI 296 <br> GTB</h3>
+    <p>$375,950</p>
+    
+    <div class="color-selector">
+        <input type="radio" id="color1-red" name="color1" value="Red">
+        <label for="color1-red" style="background-color: red;"></label>
+        <input type="radio" id="color1-blue" name="color1" value="Blue">
+        <label for="color1-blue" style="background-color: blue;"></label>
+        <input type="radio" id="color1-green" name="color1" value="Green">
+        <label for="color1-green" style="background-color: green;"></label>
+        <input type="radio" id="color1-white" name="color1" value="White">
+        <label for="color1-white" style="background-color: white;"></label>
+        <input type="radio" id="color1-black" name="color1" value="Black">
+        <label for="color1-black" style="background-color: black;"></label>
+    </div>
+    <!-- Add colorGroupName parameter -->
+    <button onclick="addToCart('FERRARI 296 GTB', 375950, 'color1')">Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+    <img src="mclaren-artura-001.webp" alt="Product 2">
+    <h3>MCLAREN ARTURA</h3>
+    <p>$237,500</p>
+    <div class="color-selector">
+        <input type="radio" id="color2-red" name="color2" value="Red">
+        <label for="color2-red" style="background-color: red;"></label>
+        <input type="radio" id="color2-blue" name="color2" value="Blue">
+        <label for="color2-blue" style="background-color: blue;"></label>
+        <input type="radio" id="color2-green" name="color2" value="Green">
+        <label for="color2-green" style="background-color: green;"></label>
+        <input type="radio" id="color2-white" name="color2" value="White">
+        <label for="color2-white" style="background-color: white;"></label>
+        <input type="radio" id="color2-black" name="color2" value="Black">
+        <label for="color2-black" style="background-color: black;"></label>
+    </div>
+    <!-- Add colorGroupName parameter -->
+    <button onclick="addToCart('MCLAREN ARTURA', 237500 , 'color2')">Add to Cart</button>
+</div>
+    
+    <div class="product">
+    <img src="2022-lamborghini-huracan-tecnica-101-1657303967.jpg" alt="Product 3">
+    <h3>Lamborghini Huracán Evo</h3>
+    <p>$249,865</p>
+    <div class="color-selector">
+        <input type="radio" id="color3-red" name="color3" value="Red">
+        <label for="color3-red" style="background-color: red;"></label>
+        <input type="radio" id="color3-blue" name="color3" value="Blue">
+        <label for="color3-blue" style="background-color: blue;"></label>
+        <input type="radio" id="color3-green" name="color3" value="Green">
+        <label for="color3-green" style="background-color: green;"></label>
+        <input type="radio" id="color3-white" name="color3" value="White">
+        <label for="color3-white" style="background-color: white;"></label>
+        <input type="radio" id="color3-black" name="color3" value="Black">
+        <label for="color3-black" style="background-color: black;"></label>
+    </div>
+    <!-- Add colorGroupName parameter -->
+    <button onclick="addToCart('Lamborghini Huracán Evo', 249865, 'color3')">Add to Cart</button>
+</div>
+
+<!-- Product 4 -->
+<div class="product">
+    <img src="mclaren_765lt_top_10.webp" alt="Product 4">
+    <h3>MCLAREN 750S </h3>
+    <p>$329,500</p>
+    <div class="color-selector">
+        <input type="radio" id="color4-red" name="color4" value="Red">
+        <label for="color4-red" style="background-color: red;"></label>
+        <input type="radio" id="color4-blue" name="color4" value="Blue">
+        <label for="color4-blue" style="background-color: blue;"></label>
+        <input type="radio" id="color4-green" name="color4" value="Green">
+        <label for="color4-green" style="background-color: green;"></label>
+        <input type="radio" id="color4-white" name="color4" value="White">
+        <label for="color4-white" style="background-color: white;"></label>
+        <input type="radio" id="color4-black" name="color4" value="Black">
+        <label for="color4-black" style="background-color: black;"></label>
+    </div>
+    <!-- Add colorGroupName parameter -->
+    <button onclick="addToCart('MCLAREN 750S', 329500 , 'color4')">Add to Cart</button>
+</div>
+
+<!-- Product 5 -->
+<div class="product">
+    <img src="vlcsnap-2023-03-17-16h18m30s840.jpg" alt="Product 5">
+    <h3>LAMBORGHINI REVUELTO</h3>
+    <p>$608,358</p>
+    <div class="color-selector">
+        <input type="radio" id="color5-red" name="color5" value="Red">
+        <label for="color5-red" style="background-color: red;"></label>
+        <input type="radio" id="color5-blue" name="color5" value="Blue">
+        <label for="color5-blue" style="background-color: blue;"></label>
+        <input type="radio" id="color5-green" name="color5" value="Green">
+        <label for="color5-green" style="background-color: green;"></label>
+        <input type="radio" id="color5-white" name="color5" value="White">
+        <label for="color5-white" style="background-color: white;"></label>
+        <input type="radio" id="color5-black" name="color5" value="Black">
+        <label for="color5-black" style="background-color: black;"></label>
+    </div>
+    <!-- Add colorGroupName parameter -->
+    <button onclick="addToCart('LAMBORGHINI REVUELTO', 608358 , 'color5')">Add to Cart</button>
+</div>
+
+    <!-- Cart -->
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+    
+    <script src="supercars.js"></script>
+</body>
+</html>
