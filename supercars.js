@@ -1,10 +1,31 @@
 
         let cartItems = [];
 
-        function addToCart(productName, price, colorGroupName) {
-    let selectedColor = getSelectedColor(colorGroupName);
-    cartItems.push({ name: productName, price: price, color: selectedColor });
-    updateCart();
+       function addToCart(productName, price, colorGroupName) {
+    // Find the selected color radio button
+    const selectedColor = document.querySelector('input[name="' + colorGroupName + '"]:checked');
+    
+    if (selectedColor) {
+        const color = selectedColor.value;
+        
+        // Create a new item object
+        const item = {
+            name: productName,
+            price: price,
+            color: color
+        };
+        
+        // Push the item to the cart array
+        cart.push(item);
+
+        // Update the cart display
+        displayCart();
+
+        // Update the total
+        updateTotal();
+    } else {
+        alert("Please select a color.");
+    }
 }
 
         function updateCart() {
