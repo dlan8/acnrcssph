@@ -1,7 +1,7 @@
 
         let cartItems = [];
 
-       function addToCart(productName, price, colorGroupName) {
+      function addToCart(productName, price, colorGroupName) {
     // Find the selected color radio button
     const selectedColor = document.querySelector('input[name="' + colorGroupName + '"]:checked');
     
@@ -16,10 +16,10 @@
         };
         
         // Push the item to the cart array
-        cart.push(item);
+        cartItems.push(item);
 
         // Update the cart display
-        displayCart();
+        updateCart();
 
         // Update the total
         updateTotal();
@@ -27,6 +27,7 @@
         alert("Please select a color.");
     }
 }
+
 
         function updateCart() {
             let cartList = document.getElementById('cart-items');
