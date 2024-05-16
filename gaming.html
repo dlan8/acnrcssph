@@ -50,6 +50,14 @@
         <p>Total: $<span id="total">0</span></p>
         <button id="buy-btn" onclick="buyItems()">Buy</button>
     </div>
+    <div id="receipt-container" class="receipt-container" style="display: none;">
+        <div class="receipt">
+            <button id="close-receipt-btn" onclick="closeReceipt()">X</button> <!-- Close button -->
+            <h2>Receipt</h2>
+            <ul id="receipt-items" class="receipt-items">
+                <!-- Receipt items will be dynamically added here -->
+            </ul>               
+        </div>
     <script src="gaming.js"></script>
 </body>
 </html>

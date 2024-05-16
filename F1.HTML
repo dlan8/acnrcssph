@@ -61,14 +61,24 @@
             </div>
         </div>
         
-        <!-- Cart -->
         <div id="cart">
             <h2>Cart</h2>
             <ul id="cart-items"></ul>
             <p>Total: $<span id="total">0</span></p>
-            <button id="checkout-btn" onclick="checkout()">Checkout</button>
+            <button id="checkout-btn" onclick="buyItems()">Checkout</button>
         </div>
-    </div>
+        
+        <!-- Receipt Container -->
+        <div id="receipt-container" class="receipt-container" style="display: none;">
+            <div class="receipt">
+                <button id="close-receipt-btn" onclick="closeReceipt()">X</button> <!-- Close button -->
+                <h2>Receipt</h2>
+                <ul id="receipt-items" class="receipt-items">
+                    <!-- Receipt items will be dynamically added here -->
+                </ul>
+                <p id="total-receipt">Total: $0</p>
+            </div>
+        </div>
     <script src="f1.js"></script>
 </body>
 </html>

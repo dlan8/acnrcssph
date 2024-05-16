@@ -1,33 +1,83 @@
-    let cartItems = [];
+let cartItems = [];
 
-    function addToCart(productName, price) {
-        cartItems.push({ name: productName, price: price });
-        updateCart();
-    }
+function addToCart(productName, price) {
+    cartItems.push({ name: productName, price: price });
+    updateCart();
+    alert('add to cart complete!');
+}
 
-    function updateCart() {
-        let cartList = document.getElementById('cart-items');
-        cartList.innerHTML = '';
-        let total = 0;
-        cartItems.forEach((item, index) => {
-            let li = document.createElement('li');
-            li.textContent = `${item.name} - $${item.price}`;
-            let removeBtn = document.createElement('button');
-            removeBtn.textContent = 'Remove';
-            removeBtn.className = 'remove-btn';
-            removeBtn.onclick = function() {
-                cartItems.splice(index, 1);
-                updateCart();
-            };
-            li.appendChild(removeBtn);
-            cartList.appendChild(li);
-            total += item.price;
-        });
-        document.getElementById('total').textContent = total;
-    }
+function updateCart() {
+    let cartList = document.getElementById('cart-items');
+    cartList.innerHTML = '';
+    let total = 0;
+    cartItems.forEach((item, index) => {
+        let li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        let removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.className = 'remove-btn';
+        removeBtn.onclick = function() {
+            cartItems.splice(index, 1);
+            updateCart();
+        };
+        li.appendChild(removeBtn);
+        cartList.appendChild(li);
+        total += item.price;
+    });
+    document.getElementById('total').textContent = total.toFixed(2); // Update total with 2 decimal places
+}
 
-    function checkout() {
-        alert('Checkout complete!');
-        cartItems = [];
-        updateCart();
-    }
+function checkout() {
+    alert('Checkout complete!');
+    buyItems(); // Call buyItems() function when checkout is clicked
+}
+
+function buyItems() {
+    // Generate receipt
+    var receipt = generateReceipt();
+
+    // Display receipt
+    displayReceipt(receipt);
+
+    // Reset cart items
+    cartItems = [];
+    updateCart();
+
+    // Alert user for purchase
+    alert('Thank you for your purchase!');
+}
+
+function generateReceipt() {
+    var receipt = "<ul>";
+    cartItems.forEach((item) => {
+        receipt += `<li>${item.name} - $${item.price.toFixed(2)}</li>`; // Ensure price has 2 decimal places
+    });
+    receipt += `<li id="total-receipt">Total: $${getTotal().toFixed(2)}</li></ul>`; // Include total amount
+    return receipt;
+}
+
+function closeReceipt() {
+    var receiptContainer = document.getElementById('receipt-container');
+    receiptContainer.style.display = 'none'; // Hide the receipt
+}
+
+function displayReceipt(receipt) {
+    // Display receipt
+    var receiptContainer = document.getElementById('receipt-container');
+    var receiptItems = document.getElementById('receipt-items');
+    receiptItems.innerHTML = ''; // Clear previous receipt items
+
+    // Populate receipt items
+    receiptItems.innerHTML = receipt;
+
+    // Show receipt
+    receiptContainer.style.display = 'block';
+}
+
+function getTotal() {
+    let total = 0;
+    cartItems.forEach((item) => {
+        total += item.price;
+    });
+    return total;
+}
